@@ -204,10 +204,10 @@ on property:ro.enable.native.bridge.exec64=1
 # here when adbd sets the service.adb.root property to 1.  We also restart adbd here
 # rather than waiting for init to notice its death and restarting it so the timing
 # of USB resetting and adb restarting more closely matches the previous behavior.
-on property:service.adb.root=1
-    write /sys/class/android_usb/android0/enable 0
-    restart adbd
-    write /sys/class/android_usb/android0/enable 1
+#on property:service.adb.root=1
+#    write /sys/class/android_usb/android0/enable 0
+#    restart adbd
+#    write /sys/class/android_usb/android0/enable 1
 
 on property:sys.property_forcedshutdown=1
     write /sys/module/intel_mid_osip/parameters/force_shutdown_occured 1

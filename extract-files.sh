@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=Z00D
+export DEVICE=T00F
 export VENDOR=asus
 
 if [ $# -eq 0 ]; then
